@@ -4,6 +4,7 @@ import { createAppContainer } from 'react-navigation';
 import Dashboard from './src/components/Dashboard';
 import { SafeAreaView, ScrollView, Text, View, StyleSheet } from 'react-native';
 import { Container } from './styles';
+import Cards from './src/components/Cards';
 
 
 function App(): JSX.Element {
@@ -15,6 +16,7 @@ function App(): JSX.Element {
          <View style={styles.container}>    
           <Text style={styles.text} >Projeto 4º DSM IOT</Text> 
           <Dashboard />
+          <Cards title={undefined} value={undefined} />
         </View>
       </ScrollView>
     </SafeAreaView> 

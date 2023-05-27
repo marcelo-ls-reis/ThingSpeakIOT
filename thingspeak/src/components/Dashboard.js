@@ -11,7 +11,7 @@ const Dashboard = () => {
     const fetchData = async () => {
         try {
             const response = await axios.get(
-                'https://api.thingspeak.com/channels/2068822/feeds.json?api_key=O4UO2E3ETQILY3RJ&results=1'
+                'https://api.thingspeak.com/channels/2068822/feeds.json?api_key=O4UO2E3ETQILY3RJ&results=2'
             );
             const data = response.data.feeds[0];
             setTemperature(data.field1);
